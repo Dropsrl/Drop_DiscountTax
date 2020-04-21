@@ -1,0 +1,30 @@
+{
+    "name": "drop/module-discount-tax",
+    "description": "Adds a configuration on the Magento 2 backoffice that allows you to show the discount field without taxes on the order/invoice/creditmemo and on related PDF documents and sales email.",
+	    "keywords" : [
+        "magento2",
+        "discount",
+        "tax",
+        "taxes",
+		"order invoice creditmemo",
+		"pdf documents",
+		"sales email"
+    ],
+    "require": {
+        "php": "^7.0|^7.1",
+        "magento/magento-composer-installer": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },	
+    "type": "magento2-module",
+    "license": "GPL-3.0-or-later",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Drop\\DiscountTax\\": ""
+        }
+    }
+}
